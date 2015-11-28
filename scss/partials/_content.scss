@@ -1,0 +1,24 @@
+.hero-dark {
+  outline: 1px solid peru;
+  background-image: url(/images/zoohome-hero.jpg);
+  padding: 280px 0;
+  text-align: center;
+  color: white;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  p {
+    margin-bottom: 100px;
+  }
+
+  // Only affects medium screens and larger
+  @include breakpoint(small) {
+    padding: 180px 0;
+    h2 {
+      font-size: 2.4rem;
+    }
+    // All CSS in here goes inside the media query
+  }
+}
